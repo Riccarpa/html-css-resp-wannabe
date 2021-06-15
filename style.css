@@ -82,14 +82,14 @@ img {
 
 @media screen and (max-width:419px) {
     .row {
-        width: 100vw;
+        width: 100%;
     }
     body {
-        margin: 0 auto;
+        /* margin: 0 auto; */
     }
     #lezioni {
         background-color: darkgoldenrod;
-        width: 100vw;
+        width: 100%;
     }
     #lezioni .row {
         display: flex;
@@ -108,7 +108,7 @@ img {
     }
     #steps {
         background-color: white;
-        width: 100vw;
+        width: 100%;
     }
     #steps .row {
         display: flex;
@@ -128,7 +128,7 @@ img {
     }
     #why {
         background-color: darkgoldenrod;
-        width: 100vw;
+        width: 100%;
     }
     #why .row {
         display: flex;
