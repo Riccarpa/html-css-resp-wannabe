@@ -5,15 +5,6 @@
     margin-top: 100px;
 }
 
-@media screen and (max-width:419px) {
-    .row {
-        width: 100%;
-    }
-    body {
-        margin: 0 auto;
-    }
-}
-
 
 /* BLOCCO LEZIONI */
 
@@ -34,28 +25,6 @@
     text-align: center;
 }
 
-@media screen and (max-width:419px) {
-    #lezioni {
-        background-color: darkgoldenrod;
-        width: 100vw;
-    }
-    #lezioni .row {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    #lezioni img {
-        width: 50%;
-        height: 50%;
-        margin-top: 20px;
-    }
-    #lezioni .row>.left,
-    #lezioni .row>.right {
-        width: 90%;
-        font-size: 12px;
-    }
-}
-
 
 /* BLOCCO STEPS */
 
@@ -68,29 +37,6 @@
 
 #steps {
     text-align: center;
-}
-
-@media screen and (max-width:419px) {
-    #steps {
-        background-color: white;
-        width: 100vw;
-    }
-    #steps .row {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    #steps img {
-        width: 50%;
-        height: 50%;
-        margin-top: 20px;
-    }
-    #steps .row>.left,
-    #steps .row>.central,
-    #steps .row>.right {
-        width: 90%;
-        font-size: 12px;
-    }
 }
 
 
@@ -113,7 +59,73 @@
     padding: 30px
 }
 
+
+/* COMMON */
+
+.row::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.container.grey {
+    background-color: #f9f9f9;
+}
+
+img {
+    height: 200px;
+}
+
+.clear {
+    clear: both;
+}
+
 @media screen and (max-width:419px) {
+    .row {
+        width: 100vw;
+    }
+    body {
+        margin: 0 auto;
+    }
+    #lezioni {
+        background-color: darkgoldenrod;
+        width: 100vw;
+    }
+    #lezioni .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #lezioni img {
+        width: 50%;
+        height: 50%;
+        margin-top: 20px;
+    }
+    #lezioni .row>.left,
+    #lezioni .row>.right {
+        width: 90%;
+        font-size: 12px;
+    }
+    #steps {
+        background-color: white;
+        width: 100vw;
+    }
+    #steps .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #steps img {
+        width: 50%;
+        height: 50%;
+        margin-top: 20px;
+    }
+    #steps .row>.left,
+    #steps .row>.central,
+    #steps .row>.right {
+        width: 90%;
+        font-size: 12px;
+    }
     #why {
         background-color: darkgoldenrod;
         width: 100vw;
@@ -135,25 +147,4 @@
         margin-top: 0px;
         font-size: 12px;
     }
-}
-
-
-/* COMMON */
-
-.row::after {
-    content: '';
-    display: table;
-    clear: both;
-}
-
-.container.grey {
-    background-color: #f9f9f9;
-}
-
-img {
-    height: 200px;
-}
-
-.clear {
-    clear: both;
 }
